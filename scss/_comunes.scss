@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 40px;
+    background-color: #ffc0cb;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    padding: 0px 30px;
+    color: black;
+    font-weight: bold;
+}
+
+a:visited {
+    color: black;
+}
+
+footer {
+    display: flex;
+    background-color: pink;
+    justify-content: space-between;
+}
+
+.datos {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.datos img {
+    width: 35px;
+}
+
+.instagram img {
+    width: 35px;
+}
+
+.instagram {
+    margin-top: 15px;
+}
+
+.instagram p {
+    text-align: center;
+}
+
+.telefono p {
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+.telefono {
+    display: flex;
+}
+
+.correo {
+    display: flex;
+}
+
+.correo p {
+    margin-left: 10px;
+    margin-top: 7px;
+}
