@@ -3,7 +3,7 @@ h1 {
     text-align: left;
     padding-left: 30px;
 }
-@media (min-width: 992px) {
+@media (min-width: $desktop) {
     nav {
         font-size: 25px;
     }
@@ -19,7 +19,7 @@ h1 {
 
 .imagen2 {
     max-width: 100%;
-    margin-top: 40px;
+    margin-top: $mg-xxl;
 }
 
 .imagen2 img {
@@ -27,12 +27,10 @@ h1 {
 }
 
 .padre {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    @include flex-column-center;
 }
 
-@media (min-width: 992px) {
+@media (min-width: $desktop) {
     .padre {
         flex-direction: row;
         justify-content: space-evenly;
@@ -41,7 +39,7 @@ h1 {
 
 
 .foto1 {
-    margin-top: 40px;
+    margin-top: $mg-xxl;
 }
 
 

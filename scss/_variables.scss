@@ -1,6 +1,7 @@
 /*Colores*/
 $color-principal: pink;
-$color-secundario: white;
+$color-secundario: black;
+$color-terciario: palevioletred;
 
 /*Resoluciones*/
 $tablet: 768px;
@@ -11,3 +12,11 @@ $mg-min: 10px;
 $mg-med:20px;
 $mg-xl:30px;
 $mg-xxl:40px;
+
+/*Mixins*/
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}

@@ -1,6 +1,7 @@
 /*Colores*/
 /*Resoluciones*/
 /*Margenes*/
+/*Mixins*/
 h1 {
   color: white;
   text-align: left;
@@ -32,7 +33,8 @@ h1 {
 .padre {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 992px) {
@@ -75,6 +77,168 @@ h1 {
   width: 320px;
 }
 
+.servicios-titulo {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.padre-cards {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 992px) {
+  .padre-cards {
+    min-height: 522px;
+  }
+}
+@media (min-width: 768px) {
+  .padre-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .padre-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.card {
+  -webkit-box-shadow: 0px 0px 11px 3px rgb(255, 20, 147);
+  -moz-box-shadow: 0px 0px 11px 3px rgb(255, 20, 147);
+  box-shadow: 0px 0px 11px 3px rgb(255, 20, 147);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sobremi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 674px;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+@media (min-width: 992px) {
+  .sobremi {
+    min-height: 660px;
+  }
+}
+.sobremi h2 {
+  margin-bottom: 15px;
+  font-size: 60px;
+  color: crimson;
+}
+
+.sobremi h3 {
+  margin-bottom: 15px;
+  font-size: 30px;
+  color: coral;
+}
+
+.sobremi p {
+  font-size: 20px;
+  color: rgb(255, 20, 147);
+  text-align: center;
+}
+
+.carousel-item {
+  height: 700px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: -50px;
+}
+
+.galeria {
+  display: none;
+  padding: 5px;
+}
+
+@media (min-width: 768px) {
+  #carouselExample {
+    display: none;
+  }
+  .galeria {
+    display: flex;
+  }
+}
+.columnas {
+  flex: 25%;
+  padding: 5px;
+}
+
+.columnas img {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: pink;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 40px;
+}
+form .controles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid palevioletred;
+  padding: 10px;
+}
+
+.botones, .boton-borrar, .boton-enviar {
+  width: 150px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 20px;
+}
+
+.boton-enviar {
+  background-color: palevioletred;
+  margin-bottom: 10px;
+}
+.boton-enviar:hover {
+  background-color: white;
+}
+
+.boton-borrar:hover {
+  background-color: palevioletred;
+}
+
+.mapa {
+  margin-bottom: 20px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -85,7 +249,7 @@ header {
   justify-content: space-between;
   padding-top: 45px;
   padding-bottom: 40px;
-  background-color: #ffc0cb;
+  background-color: pink;
 }
 
 ul {
@@ -149,6 +313,12 @@ footer {
 .correo p {
   margin-left: 10px;
   margin-top: 7px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: palevioletred;
 }
 
 /*# sourceMappingURL=styles.css.map */
